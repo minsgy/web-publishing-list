@@ -1,0 +1,18 @@
+@use "./variables";
+
+@mixin mobile {
+  @media (min-width: #{$sizepoint-mobile}) and (max-width: #{$sizepoint-desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$sizepoint-desktop}) {
+    @content;
+  }
+}
+
+@mixin iconsize($size: null) {
+  width: $size;
+  height: 100%;
+}

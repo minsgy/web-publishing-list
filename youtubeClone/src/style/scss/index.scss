@@ -1,0 +1,14 @@
+@use "./config/variables";
+@use "./config/mixins";
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}

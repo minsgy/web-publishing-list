@@ -1,0 +1,136 @@
+@charset "UTF-8";
+main {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+
+.main-navbar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+}
+.main-navbar__list {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 10px 0;
+}
+.main-navbar__list__item {
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+}
+.main-navbar__list__item:hover {
+  cursor: pointer;
+  background-color: #e4e4e4;
+  transition: 0.3s;
+}
+.main-navbar__list__item:active {
+  cursor: pointer;
+  background-color: #616161;
+  transition: 0.3s;
+}
+.main-navbar__list__item-subtitle {
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.main-navbar__list__item-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 45px;
+}
+.main-navbar__list__item-image img {
+  width: 20px;
+}
+.main-navbar__list__item-name {
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: 200;
+  padding-left: 20px;
+}
+
+.main-content {
+  flex: 1;
+  height: 100%;
+  margin-left: 200px;
+}
+.main-content__filter {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  background-color: white;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+.main-content__filter__icon {
+  padding: 3px 10px;
+  border-radius: 15px;
+  border: 1px solid #969696;
+  font-size: 14px;
+}
+.main-content__filter__icon:hover {
+  background-color: #acacac;
+  transition: 0.4s;
+}
+.main-content__video-list {
+  height: calc(100% - 50px);
+  background-color: #f9f9f9;
+  padding: 65px 0 0 65px;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-content__video-list .video-card {
+  width: 330px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  border-radius: 5px;
+}
+.main-content__video-list .video-card:active {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.main-content__video-list .video-card__thumbnail {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.main-content__video-list .video-card__detail {
+  margin-top: 10px;
+  padding: 0 5px;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 33%;
+}
+.main-content__video-list .video-card__detail__profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+}
+.main-content__video-list .video-card__detail__description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main-content__video-list .video-card__detail__description__title {
+  font-size: 16px;
+}
+.main-content__video-list .video-card__detail__description__content {
+  font-size: 12px;
+  font-weight: 200;
+}
+.main-content__video-list .video-card__detail__description__content .views:after {
+  content: "•";
+  margin-left: 4px;
+}
+
+/*# sourceMappingURL=main.css.map */

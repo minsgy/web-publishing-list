@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="./style/css/index.css" />
+    <link rel="stylesheet" href="./style/css/header.css" />
+    <link rel="stylesheet" href="./style/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <section class="header-left">
+          <div class="header-left__bugger-menu">
+            <img src="./img/bugger-menu.svg" alt="메뉴버튼">
+          </div>
+          <div class="header-left__logo">
+            <a href="https://www.youtube.com/">
+              <img src="./img/YouTube.png" alt="로고" ></img>
+            </a>
+          </div>
+        </section>
+        <section class="header-center">
+          <form class="search-form">
+            <input class="search-form__input" type="text" placeholder="검색                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 "/>
+            <button class="search-form__search-button" >
+              <img src='./img/search-button.svg' alt='검색버튼'>
+            </button>
+            <button class="search-form__voice-search-button">
+              <img src="./img/mic.png" alt="음성인식버튼">
+            </button>
+          </form>
+        </section>
+        <section class="header-right">
+          <div class="icons">
+            <div class="icon create-content">
+              <img src="./img/create-content.svg"></img>
+            </div>
+            <div class="icon many-app">
+              <img src="./img/many-app.svg"></img>
+            </div>
+            <div class="icon alarm">
+              <img src="./img/alarm.svg"></img>
+            </div>
+            <div class="icon profile">
+              <img src="./img/profile.jpg"></img>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <!-- Main부분 nav, aside로 나뉨 -->
+    <main>
+      <nav class="main-navbar">
+        <div class="main-navbar__list">
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/home.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">홈</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/search-menu.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">탐색</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/subscribe.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">구독</span>
+            </div>
+          </a>
+        </div>
+        <div class="main-navbar__list">
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/store-content.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">보관함</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/record.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">시청 기록</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/my-content.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">내 동영상</span>
+            </div>  
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/record.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">나중에 볼 동영상</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/like-content.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">좋아요 표시한 동영상</span>
+            </div>
+          </a>
+        </div>
+        <div class="main-navbar__list">
+          <div class="main-navbar__list__item">
+            <span class="main-navbar__list__item-subtitle">Youtube 더보기</span>
+          </div>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/youtube-premium.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">Youtube Premium</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/movie.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">영화</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/game.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">게임</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/real-time.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">실시간</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/learning.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">학습</span>
+            </div>  
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/sports.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">스포츠</span>
+            </div> 
+          </a>  
+        </div>
+        <div class="main-navbar__list">
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/setting.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">설정</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/report.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">신고 기록</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/service-center.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">고객센터</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="main-navbar__list__item">
+              <div class="main-navbar__list__item-image">
+                <img src="./img/opinion.svg" alt="">
+              </div>
+              <span class="main-navbar__list__item-name">의견 보내기</span>
+            </div>
+          </a>
+        </div>
+      </nav>
+      <section class="main-content">
+        <div class="main-content__filter">
+          <button class="main-content__filter__icon">
+            전체
+          </button>
+          <button class="main-content__filter__icon">
+            실시간
+          </button>
+          <button class="main-content__filter__icon">
+            음악
+          </button>
+          <button class="main-content__filter__icon">
+            요리 프로그램
+          </button>
+          <button class="main-content__filter__icon">
+            공예
+          </button>
+          <button class="main-content__filter__icon">
+            뷰티 팁
+          </button>
+          <button class="main-content__filter__icon">
+            액션 어드벤처 게임
+          </button>
+          <button class="main-content__filter__icon">
+            반려동물
+          </button>
+          <button class="main-content__filter__icon">
+            최근에 업로드된 동영상
+          </button>
+          <button class="main-content__filter__icon">
+            새로운 맞춤 동영상
+          </button>
+        </div>
+        <div class="main-content__video-list">
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>          
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <img class="video-card__thumbnail" src="./img/thumbnail.png"/>
+            <div class="video-card__detail">
+              <img class="video-card__detail__profile" src="./img/profile.jpg" alt="">
+              <div class="video-card__detail__description">
+                <h3 class="video-card__detail__description__title">민석이의 데브코스 공부 V-log</h3>
+                <div class="video-card__detail__description__content">
+                  <div class="author">Minseok Choi</div>
+                  <span class="views">조회수 1.5천회</span>
+                  <span class="upload-time">3개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
