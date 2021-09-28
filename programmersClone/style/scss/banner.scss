@@ -1,0 +1,48 @@
+@use "./config/mixins" as mix;
+@use "./config/variables" as var;
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #252843;
+  color: var.$banner-primary-color;
+  &__slide {
+    height: 100%;
+    width: var.$inner-width;
+    display: flex;
+    justify-content: center;
+    &__contents {
+      flex: 1.5;
+      padding: 30px 0;
+      display: flex;
+      flex-direction: column;
+      &__subject {
+        flex: 1;
+        color: var.$primary-white-color;
+        font-size: 16px;
+      }
+      &__title {
+        flex: 3;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 400;
+        color: var.$primary-white-color;
+      }
+      &__information {
+        flex: 2;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    &__thumbnail {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 70%;
+      }
+    }
+  }
+}
