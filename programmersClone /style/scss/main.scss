@@ -1,0 +1,251 @@
+@use "./config/mixins" as mix;
+@use "./config/variables" as var;
+
+$side-panel-width: 350px;
+$side-panel-height: 70px;
+$card-height-size: 330px;
+$recruit-list-card-height: 80px;
+main {
+  display: flex;
+  margin: 5% 0;
+  justify-content: center;
+}
+.main-container {
+  display: flex;
+  width: var.$inner-width + $side-panel-width;
+  gap: 40px;
+  .main-content {
+    width: 100%;
+    flex: 1;
+    &__frame {
+      &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 60px;
+        .title {
+          font-size: 24px;
+          font-weight: bold;
+        }
+        .more-button {
+          @include mix.button-style;
+          font-size: 18px;
+          background-color: var.$primary-white-color;
+          padding: 7px 14px;
+          border-radius: 5px;
+          &:hover {
+            @include mix.button-hover-style;
+            transition: 0.3s;
+          }
+        }
+      }
+      &__recruitment {
+        &__card {
+          display: flex;
+          margin-bottom: 35px;
+          height: 220px;
+          border: 1px solid var.$primary-border-color;
+          border-radius: 15px;
+          img {
+            width: 45%;
+            object-fit: cover;
+            border-radius: 15px 0 0 15px;
+          }
+          .recruitment-card-contents {
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            &__title {
+              font-size: 22px;
+              font-weight: bold;
+              height: 50%;
+            }
+            &__schedule {
+              color: var.$primary-text-color;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+      &__recruit-position {
+        display: flex;
+        flex-direction: column;
+        &__tech-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px;
+          margin-bottom: 30px;
+          .card {
+            @include mix.tech-card-style;
+            display: inline-block;
+            border-radius: 5px;
+            line-height: 20px;
+            padding: 8px 20px 4px;
+            font-weight: 400;
+            &:hover {
+              background-color: var.$button-color;
+              color: white;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+
+      &__recruit-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 50px;
+        &__card {
+          display: flex;
+          height: $recruit-list-card-height;
+          @include mix.card-style;
+          padding: 20px 0;
+          &__title {
+            width: 15%;
+            object-fit: contain;
+          }
+          &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .role {
+              font-size: 20px;
+              font-weight: bold;
+            }
+            .company {
+              color: var.$primary-gray-color;
+            }
+
+            .tech-list {
+              display: flex;
+              gap: 10px;
+              &__card {
+                padding: 8px 8px 4px;
+                font-size: 14px;
+                color: var.$primary-text-color;
+                background-color: var.$primary-border-color;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+      }
+
+      &__tech-feed {
+        display: flex;
+        gap: 25px;
+        &__card {
+          @include mix.card-style;
+          display: flex;
+          flex-direction: column;
+          width: floor(calc(var.$inner-width / 3));
+          height: $card-height-size;
+          .tech-feed-card {
+            &__content {
+              height: 80%;
+              padding: 20px;
+              border-bottom: 1px solid var.$primary-border-color;
+              display: flex;
+              flex-direction: column;
+              &__icon {
+                width: 100%;
+                img {
+                  width: 36px;
+                  border-radius: 6px;
+                }
+              }
+              &__title {
+                line-height: 50px;
+                font-size: 20px;
+                font-weight: bold;
+              }
+              &__detail {
+                color: var.$primary-gray-color;
+                @include mix.ellipsis(3, 18px);
+              }
+              &__tags {
+                display: flex;
+                align-items: flex-end;
+                flex: 1;
+                gap: 10px;
+                .tag {
+                  color: var.$primary-gray-color;
+                }
+              }
+            }
+            &__footer {
+              height: 20%;
+              padding: 0 20px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              &__author {
+                display: flex;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+                &-icon {
+                  width: 24px;
+                  border-radius: 24px;
+                }
+                &-name {
+                  font-size: 14px;
+                  color: var.$primary-text-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .side-content {
+    width: $side-panel-width;
+    &__card {
+      @include mix.card-style;
+      &__header {
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        height: $side-panel-height;
+        border-bottom: 1px solid #e4e4e4;
+        &-title {
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+      &__information {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        .name-email {
+          .name {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+          .email {
+            font-size: 16px;
+            color: var.$primary-text-color;
+          }
+        }
+        .name-email,
+        .desired-job,
+        .tech,
+        .career {
+          padding: 15px 0;
+          border-bottom: 1px solid #e4e4e4;
+          .card-topic {
+            color: var.$primary-text-color;
+          }
+          .card-content {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
